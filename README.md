@@ -8,7 +8,7 @@ Enjoy the shit-tier solutions below
 Day | Part 1 | Part 2
 --- | --- | ---
 1 | ✔ | ✔
-2 | ❌ | ❌
+2 | ✔ | ❌
 3 | ❌ | ❌
 4 | ❌ | ❌
 5 | ❌ | ❌

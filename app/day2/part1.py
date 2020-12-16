@@ -14,6 +14,6 @@ def main():
             i,k,v = int(m.group(1)),int(m.group(2)),m.group(3)
             z = m.group(4).count(v)
             if not z < i and not z > k:
-                o = o+1
+                o += 1
     print(o)
 main()
