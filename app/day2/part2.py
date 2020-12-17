@@ -1,8 +1,9 @@
 '''
 Day 2
-Part 1
+Part 2
 '''
 import re
+
 
 def main(o):
     values = open("data/day2.txt").read().splitlines()
@@ -10,9 +11,8 @@ def main(o):
     for i in values:
         m = p.match(i)
         if m:
-            i,k,v = int(m.group(1)),int(m.group(2)),m.group(3)
-            z = m.group(4).count(v)
-            if not z < i and not z > k:
+            pos1,pos2,letter,pw = int(m.group(1))-1,int(m.group(2))-1,m.group(3),m.group(4)
+            if (pw[pos1] == letter) != (pw[pos2] == letter):
                 o += 1
     print(o)
 main(0)
